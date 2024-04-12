@@ -15,28 +15,6 @@
             InitializeComponent();
         }
 
-        void AddToDisplayNumber(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            string buttonText = button.Text;
-            // Append the button text to the Entry field
-            ResultEntry.Text += buttonText;
-        }
-
-        void Calculate(object sender, EventArgs e)
-        {
-            List<string> operations = new List<string>();
-            List<double> values = new List<double>();
-            isJustCalculated = true;
-            string calculationString = ResultEntry.Text;
-            if (calculationString == null || calculationString.Length <= 0 )
-            {
-                return;
-            }
-            
-
-        }
-
             void OnButtonClicked(object sender, EventArgs e)
         {
             Button button = (Button)sender;
